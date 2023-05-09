@@ -1,0 +1,111 @@
+.header-nav {
+  height: inherit;
+  display: flex;
+  padding: 24px 16px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 768px) and (max-width: 1365px) {
+    padding: 24px;
+  }
+
+  &__menu-button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    height: 50px;
+
+    &::after {
+      @media (max-width: 767px) {
+        display: inline-block;
+        content: '';
+        width: 2px;
+        height: 32px;
+        background-color: #eaeaea;
+        margin-left: 16px;
+        margin-bottom: 9px;
+      }
+    }
+
+    &::before {
+      @media (min-width: 768px) and (max-width: 1365px) {
+        display: inline-block;
+        content: '';
+        width: 2px;
+        height: 32px;
+        background-color: #eaeaea;
+        margin-left: 8px;
+        margin-right: 20px;
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  &__profile-button {
+    &::after {
+      @media (min-width: 768px) and (max-width: 1365px) {
+        display: inline-block;
+        content: '';
+        width: 2px;
+        height: 32px;
+        background-color: #eaeaea;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  &__right-column-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left-column-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+
+    &:nth-child(3) {
+      @media (min-width: 768px) and (max-width: 1365px) {
+        margin-right: 0;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__left-line {
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    margin-left: 16px;
+    margin-right: 20px;
+  }
+
+  &__phone-button,
+  &__message-button,
+  &__profile-button {
+    display: none;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      display: inline-block;
+    }
+  }
+}

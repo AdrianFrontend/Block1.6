@@ -1,0 +1,13 @@
+.page-header {
+  height: 88px;
+  width: 100%;
+  background-color: #ffffff;
+
+  @media (min-width: 1366px) {
+    display: none;
+  }
+
+  &--blur {
+    filter: blur(3px);
+  }
+}

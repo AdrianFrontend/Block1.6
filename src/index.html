@@ -7,10 +7,194 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
+    <header class="page-header">
+      <nav class="header-nav">
+        <div class="header-nav__left-column-wrapper">
+          <button class="header-nav__icon header-nav__menu-button">
+            <img
+              class="open-sidebar-button header-nav__icon-img"
+              src="./img/menu.svg"
+              alt="Меню"
+            />
+          </button>
+          <a class="header-nav__logo" href="#"
+            ><img
+              class="header-nav__icon-img"
+              class="logo"
+              src="img/logo.svg"
+              alt="Логотип компании"
+          /></a>
+        </div>
+        <div class="header-nav__right-column-wrapper">
+          <a class="header-nav__icon header-nav__phone-button" href="#"
+            ><img
+              class="header-nav__icon-img"
+              src="./img/phone.svg"
+              alt="Позвонить"
+          /></a>
+          <a class="header-nav__icon header-nav__message-button" href="#"
+            ><img
+              class="header-nav__icon-img"
+              src="./img/message.svg"
+              alt="Написать"
+          /></a>
+          <a class="header-nav__icon header-nav__profile-button" href="#"
+            ><img
+              class="header-nav__icon-img"
+              src="./img/profile.svg"
+              alt="Профиль пользователя"
+          /></a>
+          <a class="header-nav__icon header-nav__submit-button" href="#"
+            ><img
+              class="header-nav__icon-img"
+              src="./img/submit.svg"
+              alt="Оставить заявку"
+          /></a>
+          <a class="header-nav__icon header-nav__checkstatus-button" href="#"
+            ><img
+              class="header-nav__icon-img"
+              src="./img/checkstatus.svg"
+              alt="Посмотреть статус"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <div class="sidebar">
+      <header class="sidebar__header">
+        <a class="sidebar__icon" title="Закрыть меню" href="#"
+          ><img class="sidebar__icon-img" alt="" src="./img/close.svg"
+        /></a>
+        <a class="logo" href="#"
+          ><img
+            class="sidebar__icon-img"
+            alt="Логотип компании"
+            src="./img/logo.svg"
+        /></a>
+        <a class="sidebar__icon" title="Найти" href="#"
+          ><img class="sidebar__icon-img" alt="" src="./img/search.svg"
+        /></a>
+      </header>
+      <nav class="sidebar__main-menu">
+        <a
+          class="sidebar__main-menu-item sidebar__main-menu-item--current"
+          href="#"
+          >Ремонт техники</a
+        >
+        <a class="sidebar__main-menu-item" href="#">Услуги и сервисы</a>
+        <a class="sidebar__main-menu-item" href="#">Корпоративным клиентам</a>
+        <a class="sidebar__main-menu-item" href="#">Продавцам техники</a>
+        <a class="sidebar__main-menu-item" href="#">Партнёрам</a>
+        <a class="sidebar__main-menu-item" href="#">Производителям</a>
+        <a class="sidebar__main-menu-item" href="#">Наши сервисные центры</a>
+        <a class="sidebar__main-menu-item" href="#">Контакты</a>
+      </nav>
+      <footer class="sidebar__footer">
+        <div class="sidebar__footer-menu-wrapper">
+          <a class="sidebar__icon" title="Позвонить нам" href="#"
+            ><img class="sidebar__icon-img" alt="" src="./img/phone.svg"
+          /></a>
+          <a class="sidebar__icon" title="Написать нам" href="#"
+            ><img class="sidebar__icon-img" alt="" src="./img/message.svg"
+          /></a>
+          <a class="sidebar__icon" title="Ваш профиль" href="#"
+            ><img class="sidebar__icon-img" alt="" src="./img/profile.svg"
+          /></a>
+        </div>
+        <a class="sidebar__email" href="#">mail@cps.com</a>
+        <a class="sidebar__phone-number" href="#">8 800 890 8900</a>
+        <div class="sidebar__language-menu">
+          <a
+            class="sidebar__language-menu-item sidebar__language-menu-item--current"
+            href="#"
+            >RU</a
+          >
+          <a class="sidebar__language-menu-item" href="#">EN</a>
+          <a class="sidebar__language-menu-item" href="#">CH</a>
+        </div>
+      </footer>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <main>
+      <article class="services">
+        <div class="services__header">
+          <h1 class="services__title">Услуги и сервисы</h1>
+          <nav
+            class="services__header-nav services__header-nav--visible-desktop"
+          >
+            <label class="services__header-nav-item-wrapper">
+              <span class="services__header-nav-text">Оставить заявку</span>
+              <a
+                class="services__nav-icon services__nav-submit-button"
+                href="#"
+              ></a>
+            </label>
+            <label class="services__header-nav-item-wrapper">
+              <span class="services__header-nav-text">Статус ремонта</span>
+              <a
+                class="services__nav-icon services__nav-checkstatus-button"
+                href="#"
+              ></a>
+            </label>
+          </nav>
+        </div>
+        <nav class="services__menu">
+          <button class="services__menu-item services__menu-item--active"
+            >Ремонтируемые бренды</button
+          >
+          <button class="services__menu-item">Ремонтируемые устройства</button>
+          <button class="services__menu-item">Цены на услуги</button>
+          <button class="services__menu-item">Адреса сервисных центров</button>
+          <button class="services__menu-item">Специальные цены</button>
+          <button class="services__menu-item">Отзывы</button>
+        </nav>
+        <section class="services__content">
+          <div class="services__content-text-wrapper">
+            <p class="services__content-text text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell.Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя. Мы успешно работаем с 1992
+              года и заслужили репутацию надежного партнера, что подтверждает
+              большое количество постоянных клиентов. Мы гордимся тем, что к нам
+              обращаются по рекомендациям и, в свою очередь, советуют нас родным
+              и близким.
+            </p>
+            <button class="read-more-button">Читать далее</button><br />
+          </div>
+          <img
+            class="services__content-image"
+            src="./img/logo-photo.jpg"
+            alt="Логотип у входа в офис компании"
+          />
+        </section>
+      </article>
+    </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </html>
