@@ -1,3 +1,23 @@
+@import './logo.scss';
+@import './page-header/page-header.scss';
+@import './sidebar.scss';
+@import './services/services.scss';
+@import './text.scss';
+@import './show-all-button.scss';
+@import './repairing-brands/repairing-brands.scss';
+@import './swiper.scss';
+@import './article-title.scss';
+@import './devices-list/devices-list-wrapper.scss';
+@import './price/price.scss';
+@import './page-footer.scss';
+
+@font-face {
+  font-family: 'TT Lakes Light';
+  src: url('../fonts/TTLakes-ExtraLight.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'TT Lakes Regular';
   src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
@@ -33,14 +53,15 @@ body {
   margin: 0;
   color: #1b1c21;
   background-color: #f8f8f8;
-  // position: relative;
-}
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'TT Lakes Regular';
 
-@import './logo.scss';
-@import './page-header.scss';
-@import './header-nav.scss';
-@import './sidebar.scss';
-@import './services.scss';
+  @media (min-width: 361px) {
+    position: relative;
+  }
+}
 
 main {
   @media (min-width: 1366px) {
@@ -50,6 +71,11 @@ main {
 
 .main--blur {
   @media (max-width: 1365px) {
-    filter: blur(3px);
+    filter: blur(6px);
+    pointer-events: none;
   }
+}
+
+.color-gray {
+  color: #7e7e82 !important;
 }

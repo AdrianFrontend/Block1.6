@@ -1,0 +1,8 @@
+.devices-list-wrapper {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+@import './devices-swiper.scss';
+@import './devices-list.scss';

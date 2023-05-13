@@ -1,0 +1,77 @@
+.price-swiper {
+  margin-bottom: 24px;
+
+  &__slide {
+    & > a {
+      text-decoration: none;
+    }
+  }
+
+  &__card {
+    box-sizing: border-box;
+    width: 260px;
+    height: 200px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    display: grid;
+    grid-template-areas:
+      'service service'
+      'price price'
+      'time order-button';
+
+    @media (min-width: 500px) {
+      width: 50vw;
+    }
+  }
+
+  &__card-item {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #1b1c21;
+
+    &:nth-child(1) {
+      grid-area: service;
+    }
+    &:nth-child(2) {
+      grid-area: price;
+    }
+    &:nth-child(3) {
+      grid-area: time;
+      margin-bottom: 0;
+      width: 81px;
+    }
+  }
+
+  &__order-button {
+    grid-area: order-button;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  &::after {
+    width: 24px;
+    height: 200px;
+    right: 0;
+    top: -5px;
+  }
+}
+
+// &__slide {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// &__card {
+//   height: 72px;
+//   display: flex;
+//   border: 1px solid #eaeaea;
+//   border-radius: 6px;
+//   padding-left: 16px;
+//   padding-right: 16px;
+//   background-color: #ffffff;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }

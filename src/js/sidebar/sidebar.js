@@ -61,7 +61,7 @@ checkWindowWidth()
 
 const menuItems = sidebar.querySelectorAll('.sidebar__main-menu-item')
 
-function menuItemClickHandler(el) {
+function sidebarMenuItemClickHandler(el) {
   el.addEventListener('click', (event) => {
     let currentEl = sidebar.querySelector('.sidebar__main-menu-item--current')
     currentEl.classList.remove('sidebar__main-menu-item--current')
@@ -73,5 +73,5 @@ function menuItemClickHandler(el) {
 }
 
 for (let i = 0; i < menuItems.length; i++) {
-  menuItemClickHandler(menuItems[i])
+  sidebarMenuItemClickHandler(menuItems[i])
 }

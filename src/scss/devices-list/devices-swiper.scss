@@ -1,0 +1,28 @@
+.devices-swiper {
+  // &__slide {
+  // }
+  &__slide-wrapper {
+    text-decoration: none;
+  }
+
+  &__card {
+    padding: 16px 16px;
+  }
+
+  &__card-name {
+    font-family: 'TT Lakes Medium';
+    margin: 0;
+    color: #1b1c21;
+    text-decoration: none;
+    margin-bottom: 64px;
+  }
+
+  &__card-button {
+    display: block;
+  }
+
+  &__image-button {
+    display: block;
+    margin-left: auto;
+  }
+}

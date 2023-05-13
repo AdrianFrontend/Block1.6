@@ -1,0 +1,226 @@
+.services {
+  padding-top: 24px;
+  padding-bottom: 35px;
+
+  @media (min-width: 1366px) {
+    padding-top: 42px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: 'TT Lakes Bold';
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 24px;
+
+    @media (min-width: 1366px) {
+      margin-bottom: 10px;
+    }
+
+    &::before {
+      float: left;
+      content: '';
+      width: 8px;
+      height: 40px;
+      background-color: #41f6d7;
+      margin-left: -4px;
+      margin-right: 12px;
+      border-radius: 30%;
+
+      @media (min-width: 768px) and (max-width: 1365px) {
+        margin-right: 22px;
+        border-radius: 30%;
+      }
+
+      @media (min-width: 1366px) {
+        margin-right: 32px;
+        border-radius: 30%;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    overflow: scroll;
+    width: auto;
+    white-space: nowrap;
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      margin-left: 8px;
+    }
+
+    @media (min-width: 1366px) {
+      margin-left: 18px;
+      flex-wrap: wrap;
+      margin-bottom: -10px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 24px;
+      height: 40px;
+      background-image: url('../img/fader.svg');
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  &__menu-item {
+    border: none;
+    background: none;
+    font-family: 'TT Lakes Medium';
+    padding: 8px 16px;
+    color: #7e7e82;
+    font-size: 16px;
+    line-height: 24px;
+    transition: background-color 0.3s, border-radius 0.3s;
+
+    &:hover:not(&--active) {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    &:first-child {
+      margin-left: 16px;
+    }
+
+    &:last-child {
+      @media (min-width: 1393px) {
+        margin-left: 18px;
+      }
+    }
+
+    &:nth-last-child(2) {
+      @media (min-width: 1366px) and (max-width: 1392px) {
+        margin-left: 18px;
+      }
+    }
+
+    &--active {
+      background-color: #ffffff;
+      border: #b8ffec 2px solid;
+      border-radius: 6px;
+      padding: 6px 14px;
+    }
+  }
+
+  &__content {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__content-text {
+    margin-left: 16px;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      margin-bottom: 5px;
+      margin-left: 25px;
+    }
+
+    @media (min-width: 1366px) {
+      margin-bottom: 14px;
+      margin-left: 35px;
+    }
+  }
+
+  &__content-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    width: auto;
+    max-width: 320px;
+    height: 100%;
+
+    @media (min-width: 768px) and (max-width: 1365px) {
+      max-width: 360px;
+      margin-right: 25px;
+      margin-left: 50px;
+      border-radius: 5px;
+    }
+
+    @media (min-width: 1366px) {
+      max-width: 530px;
+      margin-right: 28px;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+  }
+
+  &__header {
+    @media (min-width: 1366px) {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 32px;
+    }
+  }
+
+  &__header-nav-text {
+    @media (min-width: 1366px) {
+      margin-left: 32px;
+      font-family: 'TT Lakes Medium';
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__nav-item {
+    @media (min-width: 1366px) {
+      display: flex;
+      align-items: center;
+      margin-left: 32px;
+      font-family: 'TT Lakes Medium';
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: opacity 0.3s;
+
+      &::after {
+        display: block;
+        content: '';
+        height: 40px;
+        width: 40px;
+        margin-left: 15px;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__nav-submit-button {
+    @media (min-width: 1366px) {
+      &::after {
+        background-image: url('../img/submit.svg');
+      }
+    }
+  }
+
+  &__nav-checkstatus-button {
+    @media (min-width: 1366px) {
+      width: 180px;
+
+      &::after {
+        background-image: url('../img/checkstatus.svg');
+      }
+    }
+  }
+
+  &__header-nav--visible-desktop {
+    display: none;
+
+    @media (min-width: 1366px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

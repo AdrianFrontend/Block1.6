@@ -8,7 +8,7 @@
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
     16px 0px 52px rgba(14, 24, 80, 0.2);
   width: 320px;
-  transition: left 1.5s;
+  transition: left 1s;
   background-color: #ffffff;
   left: -420px;
 
@@ -39,12 +39,20 @@
     }
   }
 
+  &__logo {
+    margin-top: -4px;
+  }
+
   &__icon {
     height: 40;
-    transition: all 0.4s;
+    transition: opacity 0.2s;
 
     &:hover {
       opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
     }
 
     &:first-child[title='Закрыть меню'] {
@@ -83,7 +91,7 @@
 
     &--current {
       color: #7e7e82;
-      opacity: 0.7;
+      opacity: 0.8;
 
       &:hover {
         cursor: default;
@@ -97,6 +105,7 @@
         position: absolute;
         transform: translateX(-28px);
         border-radius: 30%;
+        clip: rect(auto, auto, auto, 4px);
 
         @media (max-width: 359px) {
           transform: translateX(-20px);
@@ -179,12 +188,8 @@
   &--open {
     left: 0;
   }
-  //
+
   &--open--on-pc {
     left: 0;
   }
-
-  // &--display--none {
-  //   display: none;
-  // }
 }
