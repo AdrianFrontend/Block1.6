@@ -526,11 +526,11 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   width: 320px;
   transition: left 0.5s;
   background-color: #ffffff;
-  left: -420px;
-  display: none; }
+  left: -420px; }
   @media (max-width: 1365px) {
     .sidebar {
-      position: fixed; } }
+      position: fixed;
+      display: none; } }
   @media (max-width: 360px) {
     .sidebar {
       width: 100%; } }
