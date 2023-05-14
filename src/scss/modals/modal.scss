@@ -1,0 +1,74 @@
+.modal {
+  background-color: white;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: -1000px;
+  display: none;
+  max-width: 420px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: -1px 0px #d9fff5;
+  padding: 24px 16px;
+  transition: all 0.5s;
+
+  @media (max-width: 1365px) {
+    position: fixed;
+  }
+
+  @media (min-width: 1365px) {
+    padding: 40px 32px;
+  }
+
+  &__title {
+    font-family: 'TT Lakes Bold';
+    margin: 0;
+    margin-bottom: 24px;
+
+    &::before {
+      content: '';
+      width: 8px;
+      height: 40px;
+      background-color: #41f6d7;
+      position: absolute;
+      transform: translateX(-20px) translateY(-5px);
+      border-radius: 30%;
+      clip: rect(auto, auto, auto, 4px);
+
+      @media (min-width: 1366px) {
+        transform: translateX(-36px) translateY(-5px);
+      }
+    }
+  }
+
+  &__close-button {
+    margin-bottom: 40px;
+
+    @media (min-width: 1365px) {
+      position: absolute;
+      transform: translateX(-100px) translateY(-5px);
+    }
+  }
+
+  &__description {
+    width: 100%;
+    font-size: 14px;
+    color: #7e7e82;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #ff3e79;
+  }
+
+  &--visible {
+    display: block;
+  }
+
+  &--open {
+    right: 0;
+  }
+}

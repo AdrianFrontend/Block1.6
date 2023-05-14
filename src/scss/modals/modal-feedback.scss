@@ -1,0 +1,22 @@
+.modal-feedback {
+  &__name-input {
+  }
+
+  &__phone-number-input {
+  }
+
+  &__mail-input {
+  }
+
+  &__message-input {
+    height: 118px;
+    resize: none;
+    &::placeholder {
+      color: #b5b6bc;
+      font-size: 16px;
+    }
+  }
+
+  &__description {
+  }
+}

@@ -8,9 +8,14 @@
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
     16px 0px 52px rgba(14, 24, 80, 0.2);
   width: 320px;
-  transition: left 1s;
+  transition: left 0.5s;
   background-color: #ffffff;
   left: -420px;
+  display: none;
+
+  @media (max-width: 1365px) {
+    position: fixed;
+  }
 
   @media (min-width: 320px) {
   }
@@ -27,12 +32,13 @@
     transition: none;
     width: 300px;
     box-shadow: none;
+    padding-top: 35px;
   }
 
   &__header {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
     @media (max-width: 360px) {
       margin-bottom: 16px;
@@ -178,6 +184,12 @@
         text-decoration: none;
         cursor: default;
       }
+    }
+  }
+
+  &--visible {
+    @media (max-width: 1365px) {
+      display: block;
     }
   }
 

@@ -7,11 +7,6 @@
   @media (min-width: 1366px) {
     display: none;
   }
-
-  &--blur {
-    filter: blur(6px);
-    pointer-events: none;
-  }
 }
 
 @import './header-nav.scss';

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -33,21 +33,27 @@
           /></a>
         </div>
         <div class="header-nav__right-column-wrapper">
-          <a class="header-nav__icon header-nav__phone-button" href="#"
+          <a
+            class="phone-button header-nav__icon header-nav__phone-button"
+            href="#"
             ><img
-              class="header-nav__icon-img"
+              class="phone-button header-nav__icon-img"
               src="./img/phone.svg"
               alt="Позвонить"
           /></a>
-          <a class="header-nav__icon header-nav__message-button" href="#"
+          <a
+            class="message-button header-nav__icon header-nav__message-button"
+            href="#"
             ><img
-              class="header-nav__icon-img"
+              class="message-button header-nav__icon-img"
               src="./img/message.svg"
               alt="Написать"
           /></a>
-          <a class="header-nav__icon header-nav__profile-button" href="#"
+          <a
+            class="profile-button header-nav__icon header-nav__profile-button"
+            href="#"
             ><img
-              class="header-nav__icon-img"
+              class="profile-button header-nav__icon-img"
               src="./img/profile.svg"
               alt="Профиль пользователя"
           /></a>
@@ -57,9 +63,11 @@
               src="./img/submit.svg"
               alt="Оставить заявку"
           /></a>
-          <a class="header-nav__icon header-nav__checkstatus-button" href="#"
+          <a
+            class="checkstatus-button header-nav__icon header-nav__checkstatus-button"
+            href="#"
             ><img
-              class="header-nav__icon-img"
+              class="checkstatus-button header-nav__icon-img"
               src="./img/checkstatus.svg"
               alt="Посмотреть статус"
           /></a>
@@ -68,7 +76,7 @@
     </header>
     <div class="sidebar">
       <header class="sidebar__header">
-        <a class="sidebar__icon" title="Закрыть меню" href="#"
+        <a class="sidebar__icon close-button" title="Закрыть меню" href="#"
           ><img class="sidebar__icon-img" alt="" src="./img/close.svg"
         /></a>
         <a class="logo sidebar__logo" href="#"
@@ -97,14 +105,23 @@
       </nav>
       <footer class="sidebar__footer">
         <div class="sidebar__footer-menu-wrapper">
-          <a class="sidebar__icon" title="Позвонить нам" href="#"
-            ><img class="sidebar__icon-img" alt="" src="./img/phone.svg"
+          <a class="phone-button sidebar__icon" title="Позвонить нам" href="#"
+            ><img
+              class="phone-button sidebar__icon-img"
+              alt=""
+              src="./img/phone.svg"
           /></a>
-          <a class="sidebar__icon" title="Написать нам" href="#"
-            ><img class="sidebar__icon-img" alt="" src="./img/message.svg"
+          <a class="message-button sidebar__icon" title="Написать нам" href="#"
+            ><img
+              class="message-button sidebar__icon-img"
+              alt=""
+              src="./img/message.svg"
           /></a>
-          <a class="sidebar__icon" title="Ваш профиль" href="#"
-            ><img class="sidebar__icon-img" alt="" src="./img/profile.svg"
+          <a class="profile-button sidebar__icon" title="Ваш профиль" href="#"
+            ><img
+              class="profile-button sidebar__icon-img"
+              alt=""
+              src="./img/profile.svg"
           /></a>
         </div>
         <a class="sidebar__email" href="#">mail@cps.com</a>
@@ -119,6 +136,61 @@
           <a class="sidebar__language-menu-item" href="#">CH</a>
         </div>
       </footer>
+    </div>
+    <div class="modal-feedback modal">
+      <button class="modal__close-button close-button"
+        ><img src="./img/close.svg"
+      /></button>
+      <h2 class="modal__title">Обратная связь</h2>
+      <form>
+        <input
+          class="modal-feedback__name-input input"
+          type="text"
+          placeholder="Имя"
+        />
+        <input
+          class="modal-feedback__phone-number-input input"
+          type="text"
+          placeholder="Телефон"
+        />
+        <input
+          class="modal-feedback__mail-input input"
+          type="text"
+          placeholder="Электронная почта"
+        />
+        <textarea
+          class="modal-feedback__message-input input"
+          type="text"
+          placeholder="Сообщение"
+        ></textarea>
+        <p class="modal-feedback__description modal__description">
+          Нажимая “отправить”, вы даете согласие на
+          <a class="modal__link" href="#">обработку персональных данных</a> и
+          соглашаетесь с нашей
+          <a class="modal__link" href="#">политикой конфиденциальности</a>
+        </p>
+        <input class="submit-button" type="submit" text="Отправить" />
+      </form>
+    </div>
+    <div class="modal-call modal">
+      <button class="modal__close-button close-button"
+        ><img src="./img/close.svg"
+      /></button>
+      <h2 class="modal__title">Заказать звонок</h2>
+      <form>
+        <input
+          class="modal-call__name-input input"
+          type="text"
+          placeholder="Телефон"
+        />
+        <p class="modal-call__description modal__description">
+          Нажимая “отправить”, вы даете согласие на
+          <a class="modal__link" href="#">обработку персональных данных</a> и
+          соглашаетесь с нашей
+          <a class="modal__link" href="#">политикой конфиденциальности</a>
+        </p>
+        <input class="submit-button" type="submit" text="Отправить" />
+      </form>
     </div>
     <main>
       <article class="services">

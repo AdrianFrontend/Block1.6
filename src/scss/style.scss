@@ -10,6 +10,11 @@
 @import './devices-list/devices-list-wrapper.scss';
 @import './price/price.scss';
 @import './page-footer.scss';
+@import './close-button.scss';
+@import './modals/modal-feedback.scss';
+@import './modals/modal.scss';
+@import './input.scss';
+@import './submit-button.scss';
 
 @font-face {
   font-family: 'TT Lakes Light';
@@ -69,11 +74,15 @@ main {
   }
 }
 
-.main--blur {
+.blur {
   @media (max-width: 1365px) {
     filter: blur(6px);
     pointer-events: none;
   }
+}
+.modal-blur {
+  filter: blur(6px);
+  pointer-events: none;
 }
 
 .color-gray {

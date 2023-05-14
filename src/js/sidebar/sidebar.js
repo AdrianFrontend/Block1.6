@@ -9,21 +9,24 @@ function checkWindowWidth() {
     function openSidebar(event) {
       event.preventDefault()
 
-      sidebar.classList.add('sidebar--open')
-      sidebar.classList.remove('sidebar--closed')
+      sidebar.classList.add('sidebar--visible')
 
-      document.querySelector('.page-header').classList.add('page-header--blur')
-      document.querySelector('main').classList.add('main--blur')
+      function open() {
+        sidebar.classList.add('sidebar--open')
+        document.querySelector('.page-header').classList.add('blur')
+        document.querySelector('main').classList.add('blur')
+      }
+
+      setTimeout(open, 1)
     }
 
     function closeSidebar(event) {
       event.preventDefault()
 
-      document.querySelector('.page-header').classList.remove('page-header--blur')
-      document.querySelector('main').classList.remove('main--blur')
+      document.querySelector('.page-header').classList.remove('blur')
+      document.querySelector('main').classList.remove('blur')
 
       sidebar.classList.remove('sidebar--open')
-      sidebar.classList.add('sidebar--closed')
     }
 
     if (sidebar.classList.contains('sidebar--open--on-pc')) {
