@@ -11,10 +11,10 @@
   transition: left 0.5s;
   background-color: #ffffff;
   left: -420px;
-  display: none;
 
   @media (max-width: 1365px) {
     position: fixed;
+    display: none;
   }
 
   @media (min-width: 320px) {
