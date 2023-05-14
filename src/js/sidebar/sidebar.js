@@ -25,8 +25,13 @@ function checkWindowWidth() {
 
       document.querySelector('.page-header').classList.remove('blur')
       document.querySelector('main').classList.remove('blur')
-
       sidebar.classList.remove('sidebar--open')
+
+      function close() {
+
+      }
+
+      setTimeout(close, 500)
     }
 
     if (sidebar.classList.contains('sidebar--open--on-pc')) {
