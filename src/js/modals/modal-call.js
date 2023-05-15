@@ -49,6 +49,8 @@ document.addEventListener('click', (event) => {
     || !event.target.classList[0].includes('modal')
     && !event.target.classList[0].includes('phone-button')
   ) {
-    closeModal(event)
+    if (event.target.tagName != 'HTML' && event.target.tagName != 'FORM') {
+      closeModal(event)
+    }
   }
 })
