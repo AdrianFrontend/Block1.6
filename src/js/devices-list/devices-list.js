@@ -3,7 +3,7 @@ const devicesListWrapper = document.querySelector('.devices')
 //    Показать всё    //
 
 let showAllButton = devicesListWrapper.querySelector('.show-all-button')
-let deviceItems = devicesListWrapper.querySelectorAll('.devices-list__item-link')
+let deviceItems = devicesListWrapper.querySelectorAll('.devices-list__card')
 
 let visible = false
 showAllButton.addEventListener('click', (event) => {
@@ -17,13 +17,13 @@ showAllButton.addEventListener('click', (event) => {
 
   if (!visible) {
     for (let i = 0; i < deviceItems.length; i++) {
-      deviceItems[i].classList.add('devices-list__item-link--visible')
+      deviceItems[i].classList.add('devices-list__card--visible')
     }
     showAllButton.textContent = 'Скрыть'
     visible = true
   } else {
     for (let i = 0; i < deviceItems.length; i++) {
-      deviceItems[i].classList.remove('devices-list__item-link--visible')
+      deviceItems[i].classList.remove('devices-list__card--visible')
     }
     showAllButton.textContent = 'Показать ещё'
     visible = false
