@@ -1034,9 +1034,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
       padding-right: 30px; } }
   .devices-list__item-link {
     text-decoration: none; }
-    @media (min-width: 768px) and (max-width: 1015px) {
-      .devices-list__item-link:nth-child(n + 4):not(.devices-list__item-link--visible) {
-        display: none; } }
   .devices-list__card {
     padding: 16px 16px;
     height: 160px;
@@ -1051,6 +1048,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     @media (min-width: 1120px) {
       .devices-list__card {
         width: 240px; } }
+    @media (min-width: 768px) and (max-width: 1015px) {
+      .devices-list__card:nth-child(n + 4):not(.devices-list__card--visible) {
+        display: none; } }
   .devices-list__card-name {
     font-family: 'TT Lakes Medium';
     margin: 0;
@@ -1260,6 +1260,8 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     .price-table__row-item:nth-child(4) {
       padding: 16px 16px;
       text-align: right; }
+  .price-table__order-button {
+    padding-top: 2px; }
 
 .page-footer {
   box-shadow: 0px -1px #d9fff5;
