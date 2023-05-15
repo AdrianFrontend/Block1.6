@@ -50,7 +50,6 @@ document.addEventListener('click', (event) => {
     && !event.target.classList[0].includes('message-button')
   ) {
     if (event.target.tagName != 'HTML' && event.target.tagName != 'FORM') {
-      console.log(event.target.tagName)
       closeModal(event)
     }
   }
